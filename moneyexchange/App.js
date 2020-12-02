@@ -27,7 +27,7 @@ const App = () => {
       <SafeAreaView style={{ padding: 4 }}>
         <Text style={{ fontSize: 24, margin: 4 }}>Please enter the value of currency you want to convert</Text>
         <TextInput
-          value={value}
+          value={value.toString()}
           onChangeText={text => { setValue(text) }}
           keyboardType="numeric"
           style={{ borderWidth: 1, borderColor: 'green', borderRadius: 8, margin: 8 }}
